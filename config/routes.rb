@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 resources :products do
     resources :subscribers, only: [ :create ]
   end
+    resource :unsubscribe, only: [ :show ]
+
   resources :posts
   root to: "products#index"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

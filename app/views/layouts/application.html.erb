@@ -23,7 +23,6 @@
   </head>
 
  <body>
-     <div class="notice"><%= notice %></div>
 
     <nav>
     
@@ -32,7 +31,10 @@
     </nav>
 
     <main>
+
+
       <%= yield %>
+               <div class="notice"><%= notice %></div>
     </main>
   </body>
 </html>
